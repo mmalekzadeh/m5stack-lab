@@ -49,7 +49,7 @@ Now you are ready to compile and upload code onto your M5Stack via the Arduino G
 
 ## Run your first Arduino program
 
-1. open `sensor_reader.ino` and run it.
+1. open  the `sensor_reader.ino` file in the `Example` folder and  run it using Arduino.
 2. Wait to see sensory values on the M5stack screen
 3. Go to `Tools > Serial Monitor or Cntrl+Shift+M`
 4. You can see the plot, shake the M5Stack to see change in readings.
