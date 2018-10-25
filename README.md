@@ -47,6 +47,13 @@ Start Arduino (from Apps or Start Menu). Check that your computer picks up the b
 
 Now you are ready to compile and upload code onto your M5Stack via the Arduino GUI. The following steps will show you how to program your M5Stack to display Temperature, Acceleration, Gyro and Magnetometer readings in X, Y and Z components on the M5Stack LCD screen, and monitor one of these readings over time. You will then collect this data to complete a time series analysis.
 
+## Run your first Arduino program
+
+1. open `sensor_reader.ino` and run it.
+2. Wait to see sensory values on the M5stack screen
+3. Go to `Tools > Serial Monitor or Cntrl+Shift+M`
+4. You can see the plot, shake the M5Stack to see change in readings.
+
 ## Useful information about this script for customisation:
 
 The first two lines of the code are:
