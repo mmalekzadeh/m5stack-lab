@@ -43,13 +43,30 @@ Plug in your M5Stack to your computer via the provided USB cable, and switch it 
 
 ### Step 4
 
-Start Arduino (from Apps or Start Menu). Check that your computer picks up the board and you have everything installed correctly by going to Tools > Board: and make sure you are able to find and select “M5Stack-FIRE” near the bottom. Make sure Tools > Port: says “COM#”. The # represents your USB port number through which your Arduino IDE will communicate with the M5Stack and should be picked up automatically.
+Start Arduino (from Apps or Start Menu). Check that your computer picks up the board and you have everything installed correctly by going to
 
-Now you are ready to compile and upload code onto your M5Stack via the Arduino GUI. The following steps will show you how to program your M5Stack to display Temperature, Acceleration, Gyro and Magnetometer readings in X, Y and Z components on the M5Stack LCD screen, and monitor one of these readings over time. You will then collect this data to complete a time series analysis.
+	Tools --> Board
+
+and make sure you are able to find and select 
+
+	M5Stack-FIRE
+	
+near the bottom. Then, make sure
+
+	Tools --> Port
+
+says
+
+	“COM#”
+
+The # represents your USB port number through which your Arduino IDE will communicate with the M5Stack and should be picked up automatically.
+
+Now you are ready to compile and upload code onto your M5Stack via the Arduino GUI. 
 
 ## Run your first Arduino program
+The following steps will show you how to program your M5Stack to display Temperature, Acceleration, Gyro and Magnetometer readings in X, Y and Z components on the M5Stack LCD screen, and monitor one of these readings over time. You will then collect this data to complete a time series analysis.
 
-1. open  the `sensor_reader.ino` file in the `Example` folder and  run it using Arduino.
+1. open  the `sensor_reader.ino` file in the `examples/motion` folder and  run it using Arduino.
 2. Wait to see sensory values on the M5stack screen
 3. Go to `Tools > Serial Monitor or Cntrl+Shift+M`
 4. You can see the plot, shake the M5Stack to see change in readings.
