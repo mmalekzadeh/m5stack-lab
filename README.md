@@ -1,13 +1,13 @@
 # M5Stack-Lab
 A tutorial on how to get your hands dirty on the combination of M5stack, Arduino, and Jupyter Notebook. This tutorial is originally created for the Ambient Sensing Lab (DE4-SIOT Sensing and IOT,2018-2019, module) at Imperial College Faculty of Engineering.
 
-## What is the M5Stack and what can it be used for?
+## (1) What is the M5Stack and what can it be used for?
 
 The M5Stack is essentially a ESP32 development board, which comes with a screen, microphone and other features built-in, which makes it programmable through the Arduino IDE, yet modular and easy to use.
 You can program the M5Stack to become a clock, timer, GPS, Accelerometer, Gyroscope, Microphone/Recorder, MP3 Player, Temperature sensor (or regulator), Voice-Initiated Light Switch, and many more things. It is intended to turn your idea into a prototype product with a simple code. 
 In this tutorial you will learn how to collect and use the M5Stack built in Gyro and Accelerometer and Temperature sensor data to complete time series data analyses.
 
-## How to get started?
+### How to get started?
 
 After you get an M5Stack, you may want to program it. NOTE: Programming an M5Stack via the Arduino IDE will delete the factory set code, however you will still be able to reprogram it with the firmware at a later stage.
 
@@ -63,29 +63,22 @@ The # represents your USB port number through which your Arduino IDE will commun
 
 Now you are ready to compile and upload code onto your M5Stack via the Arduino GUI. 
 
-## Run your first Arduino program
+## (2) Run your first Arduino program: Motion_Data
+
 The following steps will show you how to program your M5Stack to display Temperature, Acceleration, Gyro and Magnetometer readings in X, Y and Z components on the M5Stack LCD screen, and monitor one of these readings over time. You will then collect this data to complete a time series analysis.
 
-1. open  the `sensor_reader.ino` file in the `examples/motion` folder and  run it using Arduino.
-2. Wait to see sensory values on the M5stack screen
-3. Go to `Tools > Serial Monitor or Cntrl+Shift+M`
-4. You can see the plot, shake the M5Stack to see change in readings.
+1. open  the `saccl_gyro_reader.ino` file in the `examples/motion_data` folder and  run it using Arduino.
+2. Wait to see sensory values on the M5stack screen.
+3. Go to `Tools > Serial Monitor or Cntrl+Shift+M`.
+4. You can see the plot, shake the M5Stack to see changes in readings!
 
-To see more examples and learn how to code in Aurduino got to `File --> Examples --> M5stack`
-
-## Read from M5Stack into Jupyter Notebook
-1. open  the `tempreature_reader.ino` file in the `Example` folder and run it using Arduino.
-2. open  the `collecting-data.ipynb` file in the `Example` folder with Jupyter Notebook.
-3. Run the codes and see how it plots the tempreature vs humidity.
-
-
-## Useful information about this script for customisation:
+#### Useful information about this script for customisation:
 
 The first two lines of the code are:
 
 ```
-	#include <M5Stack.h>  
-	#include "utility/MPU9250.h"
+#include <M5Stack.h>  
+#include "utility/MPU9250.h"
 ```
 
 These load up the libraries (.h files) that you have downloaded in earlier (Step 2) and will be required for the script.
@@ -95,15 +88,15 @@ Typically, an Arduino IDE script consists of a Setup and a Loop. The Setup code 
 The full script is accessible through xxx and is also pasted at the end of this document.
 
 ```
-	M5.Lcd.fillScreen(BLACK);
-  M5.Lcd.setTextColor(GREEN , BLACK);
-  M5.Lcd.setTextSize(2);
+M5.Lcd.fillScreen(BLACK);
+M5.Lcd.setTextColor(GREEN , BLACK);
+M5.Lcd.setTextSize(2);
 ```
 
 Set your M5Stack LCD screen background colour, font colour and size, and can be changed by typing in different colours within the brackets.
 
 ```
-	Serial.println((int)(1000 * IMU.ax));
+Serial.println((int)(1000 * IMU.ax));
 ```
 
 Defines your variable that you want to monitor through the Serial Monitor via the Arduino GUI (Tools > Serial Monitor or Cntrl+Shift+M). You can view a live plot of the last 500 data points of this variable through the Serial Plotter (Tools > Serial Plotter or Cntrl+Shift+L). Make sure to select the correct baud rate (i.e. 115200) from the dropdown, as defined in your code line “Serial.begin(115200);” under “void Setup”.
@@ -112,9 +105,20 @@ IMU.ax are accelerometer readings, IMU.gx are Gyroscope readings, and IMU.mx are
 Finally, the “delay(100);” command at the end of the “void Loop” section at the bottom of the script defines the delay, in milliseconds, between each loop defined within the brackets. In this case, the delay is 100ms and the loop is taking and displaying the readings. You can change this if you want to increase or decrease the time rate of sensor readings.
 
 
+## (3) Read from M5Stack into Jupyter Notebook
+
+1. open  the `temp_humi_reader.ino` file in the `examples/weather_data` folder
+2. Run the file using Arduino. Wait to see data on the M5Stack screen.
+3. Run the `Jupyter Notebook`.
+3. open  the `plot-temp-humi-t_data.ipynb` file in the `examples/weather_data` folder with `Jupyter Notebook`.
+4. Run the codes and see how it plots the tempreature vs humidity.
 
 
-## Contributors 
+
+* To see more examples and learn how to code in Aurduino got to `File --> Examples --> M5stack`
+
+
+### Contributors 
 * [Fady Abayzaid](https://www.imperial.ac.uk/design-engineering/research/human-performance-and-experience/extreme-conditions-lab-ecl/)
 * [Fan Vincent Mo](https://mofanv.github.io/)
 * [Hamed Haddadi](https://haddadi.github.io/)
