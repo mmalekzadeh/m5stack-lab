@@ -54,6 +54,14 @@ Now you are ready to compile and upload code onto your M5Stack via the Arduino G
 3. Go to `Tools > Serial Monitor or Cntrl+Shift+M`
 4. You can see the plot, shake the M5Stack to see change in readings.
 
+To see more examples and learn how to code in Aurduino got to `File --> Examples --> M5stack`
+
+## Read from M5Stack into Jupyter Notebook
+1. open  the `tempreature_reader.ino` file in the `Example` folder and run it using Arduino.
+2. open  the `collecting-data.ipynb` file in the `Example` folder with Jupyter Notebook.
+3. Run the codes and see how it plots the tempreature vs humidity.
+
+
 ## Useful information about this script for customisation:
 
 The first two lines of the code are:
