@@ -115,7 +115,8 @@ Finally, the “delay(100);” command at the end of the “void Loop” section
 
 
 
-* To see more examples and learn how to code in Aurduino got to `File --> Examples --> M5stack`
+
+* To see more examples and learn how to code in Aurduino got to `File --> Examples --> M5stack`. Edit and learn!
 
 
 ### Contributors 
