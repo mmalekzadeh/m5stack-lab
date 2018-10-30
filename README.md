@@ -27,7 +27,7 @@ Secondly, download the M5Stack Library and IDF from www.m5stack.com
   
   1)	Setting Environment
   
-  2)	ESP32 Board Support
+  2)	ESP32 Board Support 
   
   3)	Install M5Stack Library
   
@@ -36,6 +36,8 @@ Secondly, download the M5Stack Library and IDF from www.m5stack.com
   **B. For Windows:**
   
   https://m5stack.readthedocs.io/en/latest/get-started/m5stack_core_get_started_Arduino_Windows.html
+  
+  or try https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-mac-and-linux-instructions/
 
 ### Step 3
 
