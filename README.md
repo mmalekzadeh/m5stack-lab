@@ -1,6 +1,8 @@
 # M5Stack-Lab
-A tutorial on how to get your hands dirty on the combination of M5stack, Arduino, and Jupyter Notebook. This tutorial is originally created for the Ambient Sensing Lab (DE4-SIOT Sensing and IOT,2018-2019, module) at Imperial College Faculty of Engineering.
-
+A tutorial on how to get your hands dirty on the combination of M5stack, Arduino, and Jupyter Notebook. 
+```
+This tutorial is originally created for the Ambient Sensing Lab (Sensing and IOT module) at Imperial College Faculty of Engineering.
+```
 ## (1) What is the M5Stack and what can it be used for?
 
 The M5Stack is essentially a ESP32 development board, which comes with a screen, microphone and other features built-in, which makes it programmable through the Arduino IDE, yet modular and easy to use.
