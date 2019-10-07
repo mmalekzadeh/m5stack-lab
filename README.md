@@ -1,17 +1,22 @@
 # M5Stack-Lab
 A tutorial on how to get your hands dirty on the combination of M5stack, Arduino, and Jupyter Notebook. 
-```
-This tutorial is originally created for the Ambient Sensing Lab (Sensing and IOT module) at Imperial College Faculty of Engineering.
-```
+
+	This tutorial is originally created for the Ambient Sensing Lab (Sensing and IOT module) at Imperial College Faculty of Engineering.
+	
 ## (1) What is the M5Stack and what can it be used for?
 
-The M5Stack is essentially a ESP32 development board, which comes with a screen, microphone and other features built-in, which makes it programmable through the Arduino IDE, yet modular and easy to use.
-You can program the M5Stack to become a clock, timer, GPS, Accelerometer, Gyroscope, Microphone/Recorder, MP3 Player, Temperature sensor (or regulator), Voice-Initiated Light Switch, and many more things. It is intended to turn your idea into a prototype product with a simple code. 
+The M5Stack is essentially an ESP32 development board, which comes with a screen, microphone and other features built-in, which makes it programmable through the Arduino IDE, yet modular and easy to use.
+You can program the M5Stack to become a clock, timer, GPS, Accelerometer, Gyroscope, Microphone/Recorder, MP3 Player, Temperature sensor (or regulator), Voice-Initiated Light Switch, and many more things.
+	
+	It is intended to turn your idea into a prototype product with a simple code. 
+
 In this tutorial you will learn how to collect and use the M5Stack built in Gyro and Accelerometer and Temperature sensor data to complete time series data analyses.
 
 ### How to get started?
 
-After you get an M5Stack, you may want to program it. NOTE: Programming an M5Stack via the Arduino IDE will delete the factory set code, however you will still be able to reprogram it with the firmware at a later stage.
+After you get an M5Stack, you may want to program it. 
+	
+	NOTE: Programming an M5Stack via the Arduino IDE will delete the factory set code, however you will still be able to reprogram it with the firmware at a later stage.
 
 ### Step 1
 
